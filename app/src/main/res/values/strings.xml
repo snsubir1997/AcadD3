@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="resetBtn">RESET</string>
+    <string name="signupLink">SignUp</string>
+    <string name="loginTEXT">LOGIN</string>
+    <string name="loginWelcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="regPwd">Password</string>
+    <string name="regEmail">E-mail</string>
+    <string name="regUsername">Username</string>
+    <string name="regPhoneNo">Phone No</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_pwd">Enter password</string>
+    <string name="enter_your_email_address">Enter your Email Address</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="help">Help</string>
+</resources>
