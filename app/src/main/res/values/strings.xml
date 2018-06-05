@@ -19,6 +19,9 @@
     <string name="enter_pwd">Enter password</string>
     <string name="enter_your_email_address">Enter your Email Address</string>
     <string name="enter_your_phone_number">Enter Your Phone Number</string>
-    <string name="submit_details">Submit Details</string>
+    <string name="submit_details">Proceed</string>
     <string name="help">Help</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="submit_from_spinner_page">Submit Details</string>
 </resources>

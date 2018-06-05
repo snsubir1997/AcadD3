@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Intent i = new Intent(MainActivity.this, LoginActivity.class);
                     i.putExtra("username",username);
                     startActivity(i);
-                    finish();
                 } else
                     Toast.makeText(getApplicationContext(), "LoginDetailsIncorrect", Toast.LENGTH_LONG).show();
                 break;

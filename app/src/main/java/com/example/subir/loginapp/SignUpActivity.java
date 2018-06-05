@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button b;
-    EditText e1,e2;
+    EditText e1,e2,e3,e4;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         b = findViewById(R.id.signUpSubmit);
         e1 = findViewById(R.id.usernameField);
         e2 = findViewById(R.id.pwdField);
+        e3 = findViewById(R.id.emailField);
+        e4 = findViewById(R.id.phNoField);
         b.setOnClickListener(this);
     }
 
@@ -30,13 +32,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         String username = e1.getText().toString();
         String password = e2.getText().toString();
+        String email = e3.getText().toString();
+        String phno = e4.getText().toString();
 
         switch (v.getId()){
             case R.id.signUpSubmit:
-                Toast.makeText(getApplicationContext(),"Sign Up Success",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(SignUpActivity.this,MainActivity.class);
+                Toast.makeText(getApplicationContext(),"Data Saved",Toast.LENGTH_LONG).show();
+                Intent i = new Intent(SignUpActivity.this,ListScrollerActivity.class);
                 i.putExtra("username",username);
                 i.putExtra("password",password);
+                i.putExtra("email",email);
+                i.putExtra("phno",phno);
                 startActivity(i);
                 break;
         }
