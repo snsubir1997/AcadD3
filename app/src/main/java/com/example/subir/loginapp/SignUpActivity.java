@@ -25,6 +25,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         e3 = findViewById(R.id.emailField);
         e4 = findViewById(R.id.phNoField);
         b.setOnClickListener(this);
+
+        String a,b,c,d;
+        Intent k = getIntent();
+        a = k.getStringExtra("username");
+        c = k.getStringExtra("email");
+        d = k.getStringExtra("phno");
+
+        e1.setText(a);
+        e2.setText("");
+        e3.setText(c);
+        e4.setText(d);
     }
 
     @Override

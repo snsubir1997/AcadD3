@@ -21,6 +21,7 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".ListScrollerActivity"></activity>
+        <activity android:name=".ConfirmActivity"></activity>
     </application>
 
 </manifest>

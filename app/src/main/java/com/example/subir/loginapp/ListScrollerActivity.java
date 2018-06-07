@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ListScrollerActivity extends AppCompatActivity implements View.OnClickListener {
+public class ListScrollerActivity extends AppCompatActivity  implements View.OnClickListener {
 
     Spinner countrySpinner,stateSpinner;
     ArrayAdapter<String> countryAdapter,stateAdapter;
@@ -25,14 +25,25 @@ public class ListScrollerActivity extends AppCompatActivity implements View.OnCl
             "Japan"
     };
 
-    String[] IndiaStates = {"Mumbai",
+    String[] IndiaStates = {
+            "Mumbai",
             "Kerala",
-            "Gujarat"};
-    String ChinaStates[] = {"Qinghai",
-            "Shanghai"};
-    String PakistanStates[] = {"Islamabad",
-            "Lahore"};
-    String JapanStates[] = {"Tokyo"};
+            "Gujarat"
+    };
+
+    String ChinaStates[] = {
+            "Qinghai",
+            "Shanghai"
+    };
+
+    String PakistanStates[] = {
+            "Islamabad",
+            "Lahore"
+    };
+
+    String JapanStates[] = {
+            "Tokyo"
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -150,17 +161,18 @@ public class ListScrollerActivity extends AppCompatActivity implements View.OnCl
         String email = j.getStringExtra("email");
         String phno = j.getStringExtra("phno");
 
-        switch (v.getId()){
-            case R.id.signUpSubmit:
-                Toast.makeText(getApplicationContext(),"Data Saved",Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(ListScrollerActivity.this,ConfirmPage.class);
-                i.putExtra("username",user);
-                i.putExtra("password",pwd);
-                i.putExtra("email",email);
-                i.putExtra("phno",phno);
-                i.putExtra("country",cty);
-                i.putExtra("state",stte);
+        switch (v.getId()) {
+            case R.id.allSubmit:
+                Toast.makeText(getApplicationContext(), "Data Saved", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ListScrollerActivity.this, ConfirmActivity.class);
+                i.putExtra("username", user);
+                i.putExtra("password", pwd);
+                i.putExtra("email", email);
+                i.putExtra("phno", phno);
+                i.putExtra("country", cty);
+                i.putExtra("state", stte);
                 startActivity(i);
                 break;
+        }
     }
 }
